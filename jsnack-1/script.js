@@ -25,4 +25,13 @@ for (let i = 0; i < n; i++){
     // Stampo l'array
     console.log(userArray);
 
+    // Stampo in pagina
+    // Creo li
+    const listItemElem = document.createElement('li');
+    // Inserisco array dentro li
+    listItemElem.innerHTML = userArray;
+    // Trovo ul in pagina
+    const arrayList = document.querySelector(".array-list");
+    // Inserisco li in ul
+    arrayList.append(listItemElem);
 }
